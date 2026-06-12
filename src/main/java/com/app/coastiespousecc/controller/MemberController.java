@@ -1,6 +1,6 @@
-package Controller;
+package com.app.coastiespousecc.controller;
 
-import Model.Member;
+import com.app.coastiespousecc.model.Member;
 import org.jspecify.annotations.NonNull;
 import org.springframework.web.bind.annotation.*;
 

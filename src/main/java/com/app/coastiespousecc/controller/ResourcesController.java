@@ -1,6 +1,6 @@
-package Controller;
+package com.app.coastiespousecc.controller;
 
-import Model.Resources;
+import com.app.coastiespousecc.model.Resources;
 import org.jspecify.annotations.NonNull;
 import org.springframework.web.bind.annotation.*;
 

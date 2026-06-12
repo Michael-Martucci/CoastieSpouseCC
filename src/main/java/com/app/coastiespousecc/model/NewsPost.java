@@ -1,4 +1,4 @@
-package Model;
+package com.app.coastiespousecc.model;
 
 import java.time.LocalDateTime;
 

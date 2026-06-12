@@ -1,6 +1,6 @@
-package Controller;
+package com.app.coastiespousecc.controller;
 
-import Model.NewsPost;
+import com.app.coastiespousecc.model.NewsPost;
 import org.jspecify.annotations.NonNull;
 import org.springframework.web.bind.annotation.*;
 
