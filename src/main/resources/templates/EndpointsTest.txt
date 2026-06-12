@@ -1,0 +1,130 @@
+//Member controller endpoints
+//GET /members - Get all members
+curl -X GET http://localhost:8080/members
+
+//POST /members - Create a new member
+curl -X POST http://localhost:8080/members \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Doe",
+    "spouse": "Jane Doe",
+    "phoneNumber": "123-456-7890",
+    "address": "123 Main St, Anytown, USA",
+    "isAdmin": false
+  }'
+
+//PUT /members/{id} - Update a member
+curl -X PUT http://localhost:8080/members/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Updated",
+    "spouse": "Jane Doe",
+    "phoneNumber": "987-654-3210",
+    "address": "456 Elm St, Newtown, USA",
+    "isAdmin": true
+  }'
+
+//DELETE /members/{id} - Delete a member - Run GET again to confirm
+curl -X DELETE http://localhost:8080/members/1
+
+//NewsPost controller endpoints
+//GET /news - Get all news posts
+curl -X GET http://localhost:8080/news
+
+//POST /news - Create a new news post
+curl -X POST http://localhost:8080/news \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Breaking News",
+    "content": "This is the content of the news post.",
+    "author": "John Reporter"
+  }'
+
+//PUT /news/{id} - Update a news post
+curl -X PUT http://localhost:8080/news/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Updated Breaking News",
+    "content": "This is the updated content of the news post.",
+    "author": "Jane Reporter"
+  }'
+
+//DELETE /news/{id} - Delete a news post - Run GET again to confirm
+curl -X DELETE http://localhost:8080/news/1
+
+//Resources controller endpoints
+//GET /resources - Get all resources
+curl -X GET http://localhost:8080/resources
+
+//POST /resources - Create a new resource
+curl -X POST http://localhost:8080/resources \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Useful Resource",
+    "url": "https://example.com",
+    "description": "A helpful resource for members.",
+    "category": "Support"
+  }'
+
+//PUT /resources/{id} - Update a resource
+curl -X PUT http://localhost:8080/resources/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Updated Resource",
+    "url": "https://updated-example.com",
+    "description": "An updated helpful resource.",
+    "category": "Updated Support"
+  }'
+
+//DELETE /resources/{id} - Delete a resource - Run GET again to confirm
+curl -X DELETE http://localhost:8080/resources/1
+
+//Event controller endpoints
+//GET /events - Get all events
+curl -X GET http://localhost:8080/events
+
+//POST /events - Create a new event
+curl -X POST http://localhost:8080/events \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Community Meeting",
+    "description": "Monthly community meeting for members.",
+    "eventDate": "2025-12-25",
+    "location": "Community Center"
+  }'
+
+//PUT /events/{id} - Update an event
+curl -X PUT http://localhost:8080/events/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Updated Community Meeting",
+    "description": "Updated monthly community meeting.",
+    "eventDate": "2025-12-26",
+    "location": "Updated Community Center"
+  }'
+
+//DELETE /events/{id} - Delete an event - Run GET again to confirm
+curl -X DELETE http://localhost:8080/events/1
+
+//Photo controller endpoints
+//GET /photos - Get all photos
+curl -X GET http://localhost:8080/photos
+
+//POST /photos - Create a new photo
+curl -X POST http://localhost:8080/photos \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Beach Photo",
+    "imageUrl": "https://example.com/photo.jpg"
+  }'
+
+//PUT /photos/{id} - Update a photo
+curl -X PUT http://localhost:8080/photos/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Updated Beach Photo",
+    "imageUrl": "https://example.com/updated-photo.jpg"
+  }'
+
+//DELETE /photos/{id} - Delete a photo - Run GET again to confirm
+curl -X DELETE http://localhost:8080/photos/1
