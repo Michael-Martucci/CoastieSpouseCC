@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoastieSpouseCC - Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #003087;
+      --gold: #C5A028;
+    }
+    body { display: flex; flex-direction: column; min-height: 100vh; }
+    .navbar-brand { color: var(--gold) !important; }
+    .nav-link:hover { color: var(--gold) !important; }
+    .page-header {
+      background-color: var(--navy);
+      color: #fff;
+      padding: 3rem 1rem;
+    }
+    .page-header-accent {
+      display: inline-block;
+      width: 50px;
+      height: 3px;
+      background-color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .event-date-badge {
+      background-color: var(--navy);
+      color: #fff;
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      text-align: center;
+      min-width: 60px;
+    }
+    .event-date-badge .month { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); }
+    .event-date-badge .day { font-size: 1.4rem; font-weight: bold; line-height: 1.1; }
+    .card-event { border-top: 4px solid var(--gold); }
+    .card-event .card-title { color: var(--navy); }
+    main { flex: 1; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--navy);">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="/index.html">CoastieSpouseCC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/members.html">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="/news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header text-center">
+      <div class="page-header-accent mx-auto"></div>
+      <h1 class="fw-bold mb-2">Upcoming Events</h1>
+      <p class="mb-0 opacity-75">Come together, build community</p>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4" id="events-container">
+        <div class="col-md-6">
+          <div class="card card-event h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="event-date-badge flex-shrink-0">
+                  <div class="month">Dec</div>
+                  <div class="day">15</div>
+                </div>
+                <div>
+                  <h5 class="card-title fw-bold mb-1">Holiday Potluck Dinner</h5>
+                  <p class="text-muted small mb-2">Community Center &bull; 6:00 PM</p>
+                  <p class="card-text text-muted">Join us for a festive evening of food and fellowship. Bring a dish to share and enjoy time with your community.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-event h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="event-date-badge flex-shrink-0">
+                  <div class="month">Jan</div>
+                  <div class="day">10</div>
+                </div>
+                <div>
+                  <h5 class="card-title fw-bold mb-1">New Year Kickoff Meeting</h5>
+                  <p class="text-muted small mb-2">Base Chapel &bull; 10:00 AM</p>
+                  <p class="card-text text-muted">Start the new year with us! We'll share updates, plan upcoming activities, and welcome new members to our group.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-white text-center py-4" style="background-color: var(--navy);">
+    <p class="mb-1">Supporting Coast Guard Families Together</p>
+    <p class="mb-0 small">&copy; 2025 CoastieSpouseCC. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
